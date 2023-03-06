@@ -28,13 +28,12 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
  */
-
 use anyhow::Error;
 use std::fmt;
 use thiserror::Error as ThisError;
 use yew::callback::Callback;
 
-use gloo::events::EventListener;
+use gloo_events::EventListener;
 use js_sys::Uint8Array;
 use wasm_bindgen::JsCast;
 use web_sys::{BinaryType, Event, MessageEvent, WebSocket};
